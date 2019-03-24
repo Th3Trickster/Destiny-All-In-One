@@ -2,3 +2,18 @@ body {
   background-color: #eeeeee;
   margin: 0;
 }
+<<<<<<< HEAD
+=======
+
+.navbar-container {
+  background-color: #393e46;
+  height: 58px;
+  width: 100vw;
+}
+
+.navbar-login-container {
+  background-color: #222831;
+  height: 35px;
+  width: 100vw;
+}
+>>>>>>> navigation-bar
