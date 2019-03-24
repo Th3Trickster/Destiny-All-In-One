@@ -1,0 +1,10 @@
+body {
+  background-color: #eeeeee;
+  margin: 0;
+}
+
+.navbar-container {
+  background-color: #393e46;
+  height: 58px;
+  width: 100vw;
+}
