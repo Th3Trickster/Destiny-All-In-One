@@ -8,3 +8,9 @@ body {
   height: 58px;
   width: 100vw;
 }
+
+.navbar-login-container {
+  background-color: #222831;
+  height: 35px;
+  width: 100vw;
+}
