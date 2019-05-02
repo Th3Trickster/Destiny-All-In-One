@@ -3,33 +3,81 @@ body {
   margin: 0;
 }
 
+footer {
+  /* TODO:
+1.) Make height responsive instead of using px
+   */
+  background-color: #222831;
+  color: #eeeeee;
+  font-size: 20px;
+  height: 48px;
+  width: 100%;
+}
+
+h6 {
+  margin: 0;
+}
+
 nav a {
   color: inherit;
   text-decoration: none;
 }
 
 nav a:hover {
-  color: #4682e2;
+  border-bottom: 3px solid #296ddb;
+  color: #296ddb;
+}
+
+nav img {
+  float: left;
+  margin-left: 10px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  /* TODO: Maintain image size as viewport size changes */
 }
 
 nav li {
   align-items: center;
+  color: #eeeeee;
   display: flex;
-  font-family: 'ZCOOL XiaoWei', serif;
   height: 100%;
-  position: relative;
 }
 
 nav ul {
-  color: #eeeeee;
   display: flex;
   flex-direction: row;
-  flex-shrink: 0;
+  font-family: 'Germania One', cursive;
   height: 100%;
   justify-content: space-between;
   list-style-type: none;
   margin: 0;
+  padding: 0;
+}
+
+.bottom-container {
+  background-color: #393e46;
+  height: 150px;
+  width: 100%;
+}
+
+.copyright-container {
+  display: inline-block;
+  line-height: 48px;
+  margin-left: 30px;
+}
+
+.middle-container {
+  /* TODO:
+2.) Make background image responsive.
+   */
+  background-image: url("https://www.bungie.net/pubassets/pkgs/123/123605/Rev_IB_Header.jpg?cv=3983621215&av=2490202117");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 70vh;
   position: relative;
+  width: 100%;
 }
 
 .navbar-container {
@@ -41,30 +89,52 @@ nav ul {
 .navbar-links-container {
   float: left;
   height: 100%;
-  width: 600px;
-  /* TODO: Maybe change this, possibly not responsive */
+  margin-left: 30px;
+  width: 33vw;
 }
 
 .navbar-login-container {
   background-color: #222831;
   height: 35px;
-  width: 100vw;
 }
 
-.navbar-login-image-container {
-  align-items: center;
-  display: flex;
+.navbar-login-container img {
   float: right;
-  height: 100%;
-  justify-content: space-between;
-  margin-right: 15px;
-  width: 150px;
-}
-
-#d2logo {
-  float: left;
-  margin-left: 10px;
+  height: 25px;
+  margin-right: 25px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  width: 25px;
+}
+
+
+
+/* TODO:
+4.) Make all images bigger and set their sizes half or less for retina displays
+5.) Add a line below links when it is hovered
+6.) Change color to stay hovered color after clicked and to maintain a line underneath
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .navbar-links-container li {
+    display: none;
+  }
+
+  .menu {
+    background-color: #eeeeee;
+    height: 5px;
+    margin: 4px 0;
+    width: 35px;
+  }
+
+  #menu-container {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    height: 100%;
+    margin-right: 30px;
+  }
 }
