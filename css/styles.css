@@ -67,22 +67,14 @@ nav ul {
 }
 
 .middle-container {
-  /* TODO:
-2.) Make background image responsive.
-   */
-  background-image: url("https://www.bungie.net/pubassets/pkgs/123/123605/Rev_IB_Header.jpg?cv=3983621215&av=2490202117");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  height: 70vh;
-  position: relative;
+  height: 70%;
   width: 100%;
 }
 
 .navbar-container {
   background-color: #393e46;
   height: 58px;
-  width: 100vw;
+  width: 100%;
 }
 
 .navbar-links-container {
@@ -113,11 +105,18 @@ nav ul {
   height: 100%;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+#middle-container-bg-image {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
 
-  body {
-    background-color: black;
-  }
+#middle-container-bg-image-container {
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
 
   .navbar-links-container li {
     display: none;
