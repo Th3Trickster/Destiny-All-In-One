@@ -67,7 +67,8 @@ nav ul {
 }
 
 .middle-container {
-  height: 70%;
+  /* display: flex; */
+  height: 60vmin;
   width: 100%;
 }
 
@@ -112,6 +113,7 @@ nav ul {
 }
 
 #middle-container-bg-image-container {
+  display: block;
   height: 100%;
   width: 100%;
 }
