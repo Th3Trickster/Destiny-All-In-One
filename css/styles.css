@@ -29,7 +29,6 @@ nav a:hover {
 }
 
 nav img {
-  float: left;
   margin-left: 10px;
   position: relative;
   top: 50%;
@@ -108,15 +107,17 @@ nav ul {
   width: 25px;
 }
 
-
-
-/* TODO:
-4.) Make all images bigger and set their sizes half or less for retina displays
-5.) Add a line below links when it is hovered
-6.) Change color to stay hovered color after clicked and to maintain a line underneath
-*/
+#d2logo-container {
+  display: inline-block;
+  float: left;
+  height: 100%;
+}
 
 @media (min-width: 320px) and (max-width: 480px) {
+
+  body {
+    background-color: black;
+  }
 
   .navbar-links-container li {
     display: none;
