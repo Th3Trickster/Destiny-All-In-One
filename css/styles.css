@@ -1,16 +1,20 @@
-body {
+html, body {
   background-color: #eeeeee;
+  height: 100vh;
   margin: 0;
+  overflow: hidden;
 }
 
 footer {
-  /* TODO:
-1.) Make height responsive instead of using px
-   */
+  align-items: center;
   background-color: #222831;
+  bottom: 0;
   color: #eeeeee;
-  font-size: 20px;
-  height: 48px;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.25rem;
+  height: 75px;
+  position: fixed;
   width: 100%;
 }
 
@@ -33,7 +37,6 @@ nav img {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  /* TODO: Maintain image size as viewport size changes */
 }
 
 nav li {
@@ -56,19 +59,18 @@ nav ul {
 
 .bottom-container {
   background-color: #393e46;
-  height: 150px;
+  height: 100%;
   width: 100%;
 }
 
 .copyright-container {
-  display: inline-block;
-  line-height: 48px;
+  display: flex;
   margin-left: 30px;
 }
 
 .middle-container {
   display: block;
-  height: 50vh;
+  height: 60vh;
   width: 100%;
 }
 
@@ -81,8 +83,8 @@ nav ul {
 .navbar-links-container {
   float: left;
   height: 100%;
-  margin-left: 30px;
-  width: 33vw;
+  margin-left: 40px;
+  width: 31%;
 }
 
 .navbar-login-container {
@@ -106,7 +108,29 @@ nav ul {
   height: 100%;
 }
 
+#footer-links-container {
+  display: flex;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+#footer-links-container ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+
+#footer-links-container li {
+
+}
+
 #middle-container-bg-image {
+  display: block;
   height: 100%;
   width: 100%;
 }
@@ -129,6 +153,10 @@ nav ul {
     width: 35px;
   }
 
+  .middle-container {
+    height: 40vh;
+  }
+
   #menu-container {
     justify-content: center;
     display: flex;
@@ -137,4 +165,9 @@ nav ul {
     height: 100%;
     margin-right: 30px;
   }
+}
+
+/* Higher Resolution */
+@media (min-width: 2000) {
+
 }
